@@ -177,7 +177,11 @@ function desenha_triangulo_d(a, b, largura, altura, cor)  {
 
     configurarAtributos_T1(vertices);
     gl_T1.useProgram(program_T1);
-    gl_T1.drawArrays(gl_T1.TRIANGLES, 0, 3);
+    gl_T1.drawArrays(
+        gl_T1.TRIANGLES,
+        0, 
+        3
+    );
 }
 
 function desenha_triangulo_e(a, b, largura, altura, cor)  {
@@ -192,7 +196,11 @@ function desenha_triangulo_e(a, b, largura, altura, cor)  {
 
     configurarAtributos_T1(vertices);
     gl_T1.useProgram(program_T1);
-    gl_T1.drawArrays(gl_T1.TRIANGLES, 0, 3);
+    gl_T1.drawArrays(
+        gl_T1.TRIANGLES, 
+        0, 
+        3
+    );
 }
 
 
