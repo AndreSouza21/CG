@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>EX2</title>
+
+    <style>
+
+      .container {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+      }
+
+      #colorBox {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background-color: blue;
+          border: 1px solid black;
+          vertical-align: text-top;
+      }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <canvas id="canvas" width="600" height="600"></canvas>
+
+        <div>
+            <p>
+                Aperte t/T para fazer triangulos <br> 
+                Aperte r/R para fazer retas <br> 
+                ↑ aumenta o tamanho da linha <br> 
+                ↓ diminui o tamanho da linha <br>
+                0 a 9 muda a cor da linha
+            </p>
+        </div>
+
+    </div>
+
+    <div>
+        <p id="canvasCoordinates">
+            Canvas: (300, 300)
+        </p>
+
+        <p id="webglCoordinates">
+            WebGL: (0.000, 0.000)
+        </p>
+        <p id="Modo">
+          Modo: Reta
+        </p>
+        <p>
+          Cor:
+          <span id="colorBox"></span>
+        </p>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
