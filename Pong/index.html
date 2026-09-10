@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #placar {
+            font-size: 48px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            letter-spacing: 20px;
+        }
+
+        #instrucoes {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="placar">
+        <span id="scoreEsquerda">0</span>:<span id="scoreDireita">0</span>
+    </div>
+
+    <div id="instrucoes">
+        Esquerda: W / S <br> Direita: Seta Cima / Seta Baixo
+    </div>
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <script src="m3.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
